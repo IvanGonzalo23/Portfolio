@@ -1,6 +1,5 @@
 // ============================================================
-// TODO EL CONTENIDO DEL PORTAFOLIO VIVE ACÁ.
-// Para actualizar texto, links o proyectos, editá solo este archivo.
+// Para actualizar texto, links o proyectos
 // ============================================================
 
 export const profile = {
@@ -13,7 +12,7 @@ export const profile = {
   github: "https://github.com/IvanGonzalo23",
   githubUsername: "IvanGonzalo23",
   linkedin: "https://www.linkedin.com/in/ivan-mendoza-3944a31b4",
-  cvUrl: "", // pegá acá el link a tu CV en PDF cuando lo tengas
+  cvUrl: "/curriculum-vitae.pdf",
   about: [
     "Soy técnico en Desarrollo de Software egresado de la Universidad Provincial de Administración, Tecnología y Oficios (UPATecO), de Salta, Argentina. Me apasiona la programación y la tecnología, con foco en desarrollo web y gestión de bases de datos.",
   "Actualmente trabajo como desarrollador freelance y estoy buscando nuevas oportunidades para seguir creciendo, combinando backend en Python/Django con interfaces en React.",

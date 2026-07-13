@@ -1,7 +1,5 @@
 import "./Avatar.css";
 
-// Ilustración propia en line-art, coherente con la estética de terminal.
-// No usa fotos ni assets externos: es SVG puro con los colores del tema.
 export function Avatar() {
   return (
     <svg
