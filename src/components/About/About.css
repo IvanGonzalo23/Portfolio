@@ -1,0 +1,42 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-text p {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.about-facts {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.about-facts .fact {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--border);
+  color: var(--text-muted);
+}
+.about-facts .fact:last-child {
+  border-bottom: none;
+}
+.about-facts .fact span:last-child {
+  color: var(--accent-2);
+  text-align: right;
+}

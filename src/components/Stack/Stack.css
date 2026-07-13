@@ -1,0 +1,45 @@
+.stack-tree {
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+
+.stack-group {
+  margin-bottom: 18px;
+}
+.stack-group:last-child {
+  margin-bottom: 0;
+}
+
+.stack-group-name {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.stack-group-name::before {
+  content: "▸ ";
+  color: var(--text-dim);
+}
+
+.stack-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 20px;
+}
+
+.stack-chip {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.stack-chip:hover {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}

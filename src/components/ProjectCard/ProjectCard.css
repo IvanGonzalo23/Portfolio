@@ -1,0 +1,106 @@
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.project-card:hover {
+  border-color: var(--accent-dim);
+  transform: translateY(-3px);
+}
+
+.project-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.project-file .filename {
+  color: var(--text);
+}
+.project-file .filename .ext {
+  color: var(--accent-2);
+}
+
+.status-badge {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  text-transform: lowercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+.status-badge.wip {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: rgba(255, 180, 84, 0.08);
+}
+.status-badge.done {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+  background: rgba(95, 212, 196, 0.08);
+}
+
+.project-body {
+  padding: 18px 16px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-desc {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.project-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.project-actions a {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  text-decoration: none;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.project-actions a[aria-disabled="true"] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.project-actions a:not([aria-disabled="true"]):hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+}
