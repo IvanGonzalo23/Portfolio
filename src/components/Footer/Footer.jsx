@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer>
       <div className="wrap">
-        © {new Date().getFullYear()} {profile.name} — construido con React, JavaScript y Vite
+        © {new Date().getFullYear()} IGMA - DEV
       </div>
     </footer>
   );
